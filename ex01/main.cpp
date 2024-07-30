@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:17:11 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:00:32 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/30 17:42:20 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main( void )
 	Animals[3]->makeSound();
 
 	std::cout << "[ Ideas test ]" << std::endl;
-	std::cout << "Cat ideas: ";
+	std::cout << "Cat ideas: " << std::endl;
 	Animals[0]->getIdeas();
 	std::cout << "Dog ideas: " ;
 	Animals[2]->getIdeas();

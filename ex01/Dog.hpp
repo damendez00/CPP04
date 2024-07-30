@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 13:03:38 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 16:57:00 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/30 17:38:59 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ class Dog : public Animal
         Dog &operator=( const Dog& rhs );
         
         void    makeSound( void ) const;
+        void    printIdeas( int i ) const;
+        void    getIdeas( void ) const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 13:15:27 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 16:56:30 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/30 17:12:17 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ class Cat : public Animal
         Cat &operator=( const Cat& rhs );
         
         void    makeSound( void ) const;
-};
+        void    printIdeas( int i ) const;
+        void    getIdeas( void ) const;
+}; 
 
 #endif

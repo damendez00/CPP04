@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:28:43 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:05:21 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/30 17:40:17 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,16 @@ Animal& Animal::operator=( const Animal& rhs )
     return (*this);
 }
 
-void Animal::makeSound( void ) const
-{
-    std::cout << "Animal makeSound called" << std::endl;
-}
+
 
 std::string    Animal::getType( void ) const
 {
     return (this->type);
+}
+
+void Animal::makeSound( void ) const
+{
+    std::cout << "Animal makeSound called" << std::endl;
 }
 
 void Animal::getIdeas( void ) const {
