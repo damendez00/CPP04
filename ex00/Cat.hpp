@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/19 16:05:23 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 14:03:21 by damendez         ###   ########.fr       */
+/*   Created: 2024/07/29 13:15:27 by damendez          #+#    #+#             */
+/*   Updated: 2024/07/30 13:13:15 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef CAT_HPP
+# define CAT_HPP
+
+#include "Animal.hpp"
 
 #include <iostream>
+#include <string>
 
-class Animal
+class Cat : public Animal
 {
-    protected:
-        std::string type;
+    private:
 
     public:
-        Animal( void );
-        Animal( std::string type );
-        virtual ~Animal( void );    // ?
-        Animal ( const Animal& src );
-        Animal& operator=( const Animal& rhs );
-
-        virtual void    makeSound( void ) const; // method declared by base class and re-defined by derived class
-        std::string     getType( void ) const;      
+        Cat( void );
+        ~Cat( void );
+        Cat( const Cat& old );
+        Cat &operator=( const Cat& rhs );
+        
+        void    makeSound( void ) const;
 };
 
 #endif

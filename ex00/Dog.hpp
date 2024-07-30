@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/19 16:05:23 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 14:03:21 by damendez         ###   ########.fr       */
+/*   Created: 2024/07/29 13:03:38 by damendez          #+#    #+#             */
+/*   Updated: 2024/07/30 13:16:27 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
+
+#include "Animal.hpp"
 
 #include <iostream>
+#include <string>
 
-class Animal
+class Dog : public Animal
 {
-    protected:
-        std::string type;
+    private:
 
     public:
-        Animal( void );
-        Animal( std::string type );
-        virtual ~Animal( void );    // ?
-        Animal ( const Animal& src );
-        Animal& operator=( const Animal& rhs );
-
-        virtual void    makeSound( void ) const; // method declared by base class and re-defined by derived class
-        std::string     getType( void ) const;      
+        Dog( void );
+        ~Dog( void );
+        Dog( const Dog& old );
+        Dog &operator=( const Dog& rhs );
+        
+        void    makeSound( void ) const;
 };
 
 #endif
