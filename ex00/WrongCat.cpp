@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 14:14:41 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 14:16:16 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/30 14:46:58 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ WrongCat &WrongCat::operator=(const WrongCat& rhs) {
 	return (*this);
 }
 
-void	WrongCat::makeSound() const
-{
-	std::cout << "Wrong miaaaauuuuu..." << std::endl;
+void	WrongCat::makeSound() const {
+	std::cout << "Wrong meoww" << std::endl;
 }

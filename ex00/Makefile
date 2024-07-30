@@ -6,15 +6,15 @@
 #    By: damendez <damendez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/19 16:12:29 by damendez          #+#    #+#              #
-#    Updated: 2024/07/30 13:39:44 by damendez         ###   ########.fr        #
+#    Updated: 2024/07/30 15:02:31 by damendez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= Poly
 
-SRC_FILES	= Animal.cpp Cat.cpp Dog.cpp main.cpp
+SRC_FILES	= Animal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp
 
-HEADER		= Animal.hpp Cat.hpp Dog.hpp
+HEADER		= Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp
 
 OBJ_DIR		= obj/
 OBJ_FILES	= $(SRC_FILES:.cpp=.o)
