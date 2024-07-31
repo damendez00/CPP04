@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:05:23 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:03:35 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 15:46:14 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ class Animal
         Animal( void );
         Animal( std::string type );
         virtual ~Animal( void );
-        Animal ( const Animal& src );
+        Animal ( const Animal& old );
         Animal& operator=( const Animal& rhs );
         
         std::string     getType( void ) const;      
-        virtual void    makeSound( void ) const; // method declared by base class and re-defined by derived class
+        virtual void    makeSound( void ) const;
         virtual void    getIdeas( void ) const;
 };
 

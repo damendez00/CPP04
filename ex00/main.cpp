@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:17:11 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 15:03:31 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 16:18:43 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int main( void )
     
     std::cout << "[--- Sound Tests ---]" << std::endl;
     i->makeSound();
+    j->makeSound();
     meta->makeSound();
 
     delete  meta;
@@ -42,14 +43,15 @@ int main( void )
     const WrongCat* wrongI = new WrongCat();
 
     std::cout << "[--- Type Tests ---]" << std::endl;
+    std::cout << "wrongmeta: " << wrongMeta->getType() << " " << std::endl;
     std::cout << "wrongJ Type: " << wrongJ->getType() << " " << std::endl;
     std::cout << "wrongI Type: " << wrongI->getType() << " " << std::endl;
-    std::cout << "wrongmeta: " << wrongMeta->getType() << " " << std::endl;
     
     std::cout << "[--- Sound Tests ---]" << std::endl;
+    wrongMeta->makeSound();  
     wrongJ->makeSound();
     wrongI->makeSound();
-    wrongMeta->makeSound();
+    
 
     delete  wrongMeta;
     delete  wrongJ;

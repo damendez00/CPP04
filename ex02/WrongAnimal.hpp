@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 14:04:54 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 15:13:52 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 16:14:43 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ class WrongAnimal
 	public:
 		WrongAnimal( void );
 		WrongAnimal( std::string type );
-		~WrongAnimal( void );
+		virtual ~WrongAnimal( void );
 		WrongAnimal( const WrongAnimal& old );
         WrongAnimal	&operator=( const WrongAnimal& rhs );
         
 		std::string	getType(void) const;
-		void makeSound(void) const; // since base class method is not virtual, its not properly redefined by derived class
+		void makeSound(void) const;
 };
 
 #endif
