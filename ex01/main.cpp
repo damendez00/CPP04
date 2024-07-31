@@ -6,14 +6,12 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:17:11 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:42:20 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 17:20:03 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 #include "Brain.hpp"
 

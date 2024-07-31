@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 16:27:08 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 16:59:55 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 17:01:38 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Brain
 {
     protected:
-        std::string _ideas[100];
+        std::string ideas[100];
 
     public:
         Brain();

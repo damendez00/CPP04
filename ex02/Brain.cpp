@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 16:27:05 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:59:30 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/31 17:01:38 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Brain::Brain() {
     std::cout << "Brain default constructor called" << std::endl;
     for (int i = 0; i < 100; i++)
-        this->_ideas[i] = "I don't have any idea";        
+        this->ideas[i] = "I don't have any idea";        
 }
 
 Brain::~Brain() {
@@ -31,11 +31,11 @@ Brain &Brain::operator=( const Brain& rhs ) {
     std::cout << "Brain assignation operator called" << std::endl;
     if (this != &rhs) {
         for (int i = 0; i < 100; i++)
-            this->_ideas[i] = rhs._ideas[i];
+            this->ideas[i] = rhs.ideas[i];
     }
     return (*this);
 }
 
 std::string Brain::getIdeas( int i ) const {
-    return (this->_ideas[i]);
+    return (this->ideas[i]);
 }
