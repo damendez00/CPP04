@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 13:03:38 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:38:59 by damendez         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:45:47 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Dog : public Animal
 {
     private:
         Brain   *_brain;
+        
     public:
         Dog( void );
         ~Dog( void );

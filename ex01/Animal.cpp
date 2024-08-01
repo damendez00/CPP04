@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:28:43 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:40:17 by damendez         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:56:13 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ Animal& Animal::operator=( const Animal& rhs )
     }
     return (*this);
 }
-
-
 
 std::string    Animal::getType( void ) const
 {

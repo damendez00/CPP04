@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:17:11 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/30 17:42:20 by damendez         ###   ########.fr       */
+/*   Updated: 2024/08/01 16:04:00 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main( void )
 	Animals[2] = new Dog();
 	Animals[3] = new Dog();
 	
-	const Animal *animal = new Animal();
+	//const Animal *animal = new Animal();
 
     std::cout << "\n[--- DEEP COPIES TEST ---]" << std::endl;
 	std::cout << "[ Type tests ]" << std::endl;
@@ -47,7 +47,7 @@ int main( void )
 	std::cout << "Dog ideas: " ;
 	Animals[2]->getIdeas();
 	std::cout << "Animal ideas: ";
-	animal->getIdeas();
+	//animal->getIdeas();
 
 	int k;
 	k = 0;
@@ -57,5 +57,5 @@ int main( void )
 		delete Animals[k];
 		k++;
 	}
-	delete animal;
+	//delete animal;
 }

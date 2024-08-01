@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 16:17:11 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/31 17:20:03 by damendez         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:58:50 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,11 @@ int main( void )
 	const Animal *animal = new Animal();
 
     std::cout << "\n[--- DEEP COPIES TEST ---]" << std::endl;
+	Dog basic;
+	{
+		Dog tmp = basic;
+	}
+	
 	std::cout << "[ Type tests ]" << std::endl;
 	std::cout <<  Animals[0]->getType() << " " << std::endl;
 	std::cout <<  Animals[1]->getType() << " " << std::endl;
@@ -42,9 +47,9 @@ int main( void )
 	std::cout << "[ Ideas test ]" << std::endl;
 	std::cout << "Cat ideas: " << std::endl;
 	Animals[0]->getIdeas();
-	std::cout << "Dog ideas: " ;
+	std::cout << "Dog ideas: " << std::endl;
 	Animals[2]->getIdeas();
-	std::cout << "Animal ideas: ";
+	std::cout << "Animal ideas: " << std::endl;
 	animal->getIdeas();
 
 	int k;
